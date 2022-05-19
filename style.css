@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: dodgerblue;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.logo-container img {
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.login-container {
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    padding: 3rem;
+}
+
+form h2 {
+    text-align: center;
+}
+
+::placeholder {
+    color: black;
+}
+
+form input {
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 1rem;
+    margin-top: 2rem;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form input[type="submit"]{
+    color: black;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* Swal button design  */
+.swal2-title {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.swal2-styled.swal2-confirm {
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: #444;
+}
+
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: none;
+}
+
+.swal2-actions.swal2-loading {
+    margin: 1rem 0;
+}
+/* Swal button design  */
+

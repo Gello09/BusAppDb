@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+body {
+    background-color: dodgerblue;
+}
+
+.log-out {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.log-out a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.log-out a:hover {
+    color: white;
+    background-color: black;
+}
+
+.dashboard-container {
+    /* background-color: dodgerblue; */
+    width: 1500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.total-booking {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.total-booking input {
+    width: 500px;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.total-booking input::placeholder {
+    color: black;
+}
+
+.total-booking input:focus {
+    outline: 1px solid black;
+}
+
+.option-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-container a {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    padding: 1rem 2rem;
+    margin: 1rem 2.5rem;
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+}
+
+.option-container a:hover {
+    color: white;
+    background-color: black;
+}
+
+.booking-scroll {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.booking-schedule {
+    display: flex;
+}
+
+.sched-container {
+    padding: 1.2rem 5px;
+    border-bottom: 1px solid black;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+}
+
+.sched-container:nth-child(1),
+.sched-container:nth-child(6){
+    width: 120px;
+}
+
+.sched-container:nth-child(2){
+    width: 200px;
+}
+
+.sched-container:nth-child(3),
+.sched-container:nth-child(5){
+    width: 250px;
+}
+
+.sched-container:nth-child(4){
+    width: 120px;
+}
+
+.sched-container:nth-child(7),
+.sched-container:nth-child(8){
+    width: 180px;
+    text-align: center;
+    justify-content: center;
+}
+
+.proof-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proof-image img {
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+form .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-container input {
+    background-color: transparent;
+    width: 70%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container input:hover:nth-child(1){
+    color: white;
+    border-color: green;
+    background-color: green;
+}
+
+.button-container input:hover:nth-child(2){
+    color: white;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.sched-container .confirm {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sched-container .decline {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Swal button design  */
+.swal2-title {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.swal2-styled.swal2-confirm {
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: #444;
+}
+
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: none;
+}
+
+.swal2-actions.swal2-loading {
+    margin: 1rem 0;
+}
+/* Swal button design  */
