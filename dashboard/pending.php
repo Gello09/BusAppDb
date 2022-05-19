@@ -36,7 +36,7 @@
             <h1> Pending Schedule </h1>
             <div class="total-booking">
                 <div class="search-container">
-                    <input type="text" placeholder="Search Destination">
+                    <input id="search-bar" type="text" placeholder="Search Destination">
                 </div>
                 <div class="total">
                     Total pending of booking = 
@@ -78,10 +78,10 @@
                             $seat = $row['bookingDetailSeatNumber'];
                             $proof = $row['bookingDetailPaymentReceipt'];
                 ?>
-                    <div class="booking-schedule">
+                    <div class="booking-schedule booking-section">
                         <div class="sched-container"><?php echo $index ?></div>
                         <div class="sched-container"><?php echo $email ?></div>
-                        <div class="sched-container"><?php echo $destination ?></div>
+                        <div class="sched-container destination"><?php echo $destination ?></div>
                         <div class="sched-container"><?php echo $date ?></div>
                         <div class="sched-container"><?php echo $time ?></div>
                         <div class="sched-container"><?php echo $seat ?></div>
@@ -108,6 +108,26 @@
                 ?>
             </div>
         </div>
+        <script>
+            // For search bar 
+            let searchBar = document.getElementById("search-bar");
+            let rows = document.querySelectorAll(".destination");
+
+            searchBar.addEventListener('keyup', function(){
+                let searchInput = document.getElementById("search-bar").value.toUpperCase();
+                let topicContainer = document.querySelectorAll(".booking-section");
+
+                for(let i = 0; i < rows.length; i++){
+                    let inputs = rows[i].innerHTML;
+                    if(inputs.toUpperCase().indexOf(searchInput) > -1){
+                        topicContainer[i].style.display = "";
+                    }else{
+                        topicContainer[i].style.display = "none";
+                    }
+                    
+                }
+            });
+        </script>
     </body>
 </html>
 
